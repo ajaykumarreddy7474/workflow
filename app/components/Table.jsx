@@ -7,19 +7,20 @@ import T2 from '../../public/two2.jpg';
 
 const Table = () => {
   return (
-    <div className="container mx-auto mb-8 px-4 sm:px-0">
-      <div className="overflow-x-auto">
+  
+      <div className="p-5 h-screen">
+        <div className="overflow-auto rounded-lg shadow">
         <table className="w-full border-2 border-gray-300 bg-slate-200 rounded-lg">
-          <thead className="bg-slate-300 text-slate-500 text-xs">
+          <thead className="bg-slate-300 text-slate-500 text-xs border-b-2">
             <tr>
-              <th className="px-3 py-2 sm:px-6 sm:py-3 text-left">NAME</th>
-              <th className="px-3 py-2 sm:px-6 sm:py-3 text-left">TITLE</th>
-              <th className="px-3 py-2 sm:px-6 sm:py-3 text-left">STATUS</th>
-              <th className="px-3 py-2 sm:px-6 sm:py-3 text-left">ROLE</th>
-              <th className="px-3 py-2 sm:px-6 sm:py-3 text-left"></th>
+              <th className=" w-20 p-3 text-sm tracking-wide text-left">NAME</th>
+              <th className=" p-3 text-sm tracking-wide text-left">TITLE</th>
+              <th className="w-24 p-3 text-sm tracking-wide text-left">STATUS</th>
+              <th className=" w-24 p-3 text-sm tracking-wide text-left">ROLE</th>
+              <th className="w-32 p-3 text-sm tracking-wide text-left"></th>
             </tr>
           </thead>
-          <tbody className="overflow-x-scroll overflow-y-scroll sm:overflow-x-auto sm:overflow-y-auto max-w-screen-sm mx-auto">
+          <tbody>
             <TableRow image={T1} name="John Doe" email="Jane Cooper@example.com" title="Regional Paradigm Technician" status="Active" role="Owner" job="Optimization" />
             <TableRow image={T2} name="Cody Fisher" email="cody.doefisher@example.com" title="Product Directives Officer" job="Intranet" status="Active" role="Owner" />
             <TableRow image={T4} name="Ether Howard" email="Ether.Howard@example.com" title="Forward response developer" status="Active" role="Member" job="Directives" />
@@ -29,32 +30,33 @@ const Table = () => {
           </tbody>
         </table>
       </div>
-    </div>
+      </div>
+   
   );
 }
 
 const TableRow = ({ image, name, email, title, status, role, job }) => {
   return (
     <tr className="border-b border-gray-400">
-      <td className="px-3 py-2 sm:px-6 sm:py-4">
+      <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
         <div className="flex items-center">
-          <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 relative">
+          <div className="flex-shrink-0 w-10 h-10 relative">
             <Image src={image} alt="Profile Picture" layout="fill" className="rounded-full" />
           </div>
-          <div className="ml-2 sm:ml-4">
-            <div className="text-xs sm:text-sm font-medium text-gray-900">{name}</div>
-            <div className="text-xs sm:text-sm text-gray-500">{email}</div>
+          <div className="ml-4">
+            <div className="text-sm font-medium text-gray-900">{name}</div>
+            <div className="text-sm text-gray-500">{email}</div>
           </div>
         </div>
       </td>
-      <td className="px-3 py-2 sm:px-6 sm:py-4">
-        <div className="text-xs sm:text-sm text-gray-500">{title}<br />{job}</div>
+      <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
+        <div className="text-sm text-gray-500">{title}<br />{job}</div>
       </td>
-      <td className="px-3 py-2 sm:px-6 sm:py-4">
-        <span className="px-2 py-1 text-xs sm:text-sm bg-green-300 rounded-full">{status}</span>
+      <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
+        <span className="px-2 py-1 text-sm bg-green-300 rounded-full">{status}</span>
       </td>
-      <td className="px-3 py-2 sm:px-6 sm:py-4">{role}</td>
-      <td className="px-3 py-2 sm:px-6 sm:py-4 text-blue-400 cursor-pointer">Edit</td>
+      <td className="p-3 text-sm text-gray-700 whitespace-nowrap">{role}</td>
+      <td className="p-3 text-sm  text-blue-400 cursor-pointer whitespace-nowrap">Edit</td>
     </tr>
   );
 }

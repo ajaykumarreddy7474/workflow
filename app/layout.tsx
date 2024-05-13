@@ -22,9 +22,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex">
           <SideNavbar / >
-          <div className="flex-1 md:flex h-screen relative ">
+          <div className="flex-1 md:flex h-screen relative overflow-auto ">
           <Header />
-          <main className="  w-full h-full">{children}</main>
+          <main className="  w-full h-full ">{children}</main>
         </div>
         </div>
       </body>
