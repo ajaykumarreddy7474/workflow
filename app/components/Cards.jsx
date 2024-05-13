@@ -10,7 +10,7 @@ const Cards = () => {
     </div>
     <div className="ml-4">
       <p className="text-sm text-gray-600">Total Requests</p>
-      <p className="text-2xl font-bold max-[420px]:flex-wrap">77,322<span className="text-sm text-green-600"> &#9650; 122</span></p>
+      <p className="text-2xl font-bold ">77,322<span className="text-sm text-green-600 max-[420px]:flex-wrap"> &#9650; 122</span></p>
     </div>
     <div>
     </div>
@@ -30,7 +30,7 @@ const Cards = () => {
     </div>
     <div className="ml-4">
       <p className="text-sm text-gray-600">Pending Sheets</p>
-      <p className="text-2xl font-bold max-[420px]:flex-wrap">58.16%   <span className="text-sm text-green-600"> &#9650; 5.4%</span></p>
+      <p className="text-2xl font-bold ">58.16%   <span className="text-sm text-green-600 max-[420px]:flex-wrap"> &#9650; 5.4%</span></p>
     </div>
     <div>
     </div>
@@ -48,7 +48,7 @@ const Cards = () => {
     </div>
     <div className="ml-4">
       <p className="text-sm text-gray-600">Total Requests</p>
-      <p className="text-2xl font-bold max-[420px]:flex-wrap">24.57%  <span className="text-sm text-red-600"> &#9660; 3.2%</span></p>
+      <p className="text-2xl font-bold ">24.57%<span className="text-sm text-red-600"> &#9660; 3.2%</span></p>
     </div>
     <div>
     </div>
