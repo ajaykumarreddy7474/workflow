@@ -8,7 +8,7 @@ import T2 from '../../public/two2.jpg';
 const Table = () => {
   return (
   
-      <div className="p-5 h-screen">
+      <div className="p-5 h-screen lg:px-20 ">
         <div className="overflow-auto rounded-lg shadow">
         <table className="w-full border-2 border-gray-300 bg-slate-200 rounded-lg">
           <thead className="bg-slate-300 text-slate-500 text-xs border-b-2">

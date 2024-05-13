@@ -3,7 +3,7 @@ import DashTable from '../components/DashTable'
 import Location2 from '../components/location2'
 const Dashboard = () => {
     return (
-      <div className=" pt-20  flex justify-between md:w-full min-h-[100%] bg-blue-400  flex-col"> 
+      <div className="   flex justify-center md:w-full min-h-[100%] bg-blue-400  flex-col"> 
           <Location2/>
           <Cards/>
            <DashTable/>

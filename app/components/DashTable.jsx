@@ -2,9 +2,10 @@
 
 const DashTable = () => {
     return (
-      <div className="container mx-auto pt-10 mb-[120px]">
-        <div className="overflow-x-auto px-20">
-          <table className="w-full border-2 border-gray-300 bg-gray-50 rounded-lg">
+      <div className="container mx-auto pt-10 ">
+        <div className="overflow-x-auto px-5 py-6 lg:px-20 ">
+          <div className="overflow-auto rounded-lg shadow max-[420px]:w-[180%] ">
+          <table className=" w-full border-2 border-gray-300 bg-gray-50 rounded-lg ">
             <thead className="bg-slate-100 text-slate-500 text-xs">
               <tr>
                 <th className="px-10 py-3 text-left ">NAME</th>
@@ -20,6 +21,7 @@ const DashTable = () => {
              
             </tbody>
           </table>
+          </div>
         </div>
       </div>
     );
