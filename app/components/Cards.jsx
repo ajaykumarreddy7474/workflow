@@ -1,9 +1,9 @@
 import { HandIcon, MailIcon, UsersIcon } from '@heroicons/react/outline';
 const Cards = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-10 px-20 text-black">
+    <div className=" max-[420px]:pt-5 flex flex-col md:flex-row gap-10 px-20 text-black max-[420px]:justify-center items-center">
       {/* Card 1 */}
-      <div className="bg-white h-40 rounded-lg shadow-md p-4 flex flex-col  justify-start md:w-1/3 bottom-0 left-0 relative border-2 ">
+      <div className="max-[420px]:w-[175%]   bg-white h-40 rounded-lg shadow-md p-3 flex flex-col  justify-start md:w-1/3 bottom-0 left-0 relative border-2 ">
   <div className="flex items-center pt-2 px-2">
     <div>
       <UsersIcon className="w-10 h-10 text-white bg-blue-600 p-2 rounded-md text-xl" />
@@ -22,7 +22,7 @@ const Cards = () => {
 
 
       {/* Card 2 */}
-      <div className="bg-white h-40 rounded-lg shadow-md p-4 flex flex-col  justify-start md:w-1/3 bottom-0 left-0 relative border-2">
+      <div className=" max-[420px]:w-[175%] bg-white h-40 rounded-lg shadow-md p-3 flex flex-col  justify-start md:w-1/3 bottom-0 left-0 relative border-2">
   <div className="flex items-center pt-2 px-2">
     <div>
       <MailIcon className="w-10 h-10 text-white bg-blue-600 p-2 rounded-md text-xl" />
@@ -41,10 +41,10 @@ const Cards = () => {
       </div>
 
       {/* Card 3 */}
-      <div className="bg-white h-40 rounded-lg shadow-md p-4 flex flex-col  justify-start md:w-1/3 bottom-0 left-0 relative border-2">
+      <div className="max-[420px]:w-[175%] bg-white h-40 rounded-lg shadow-md p-3 flex flex-col  justify-start md:w-1/3 bottom-0 left-0 relative border-2">
   <div className="flex items-center pt-2 px-2">
     <div>
-      <HandIcon className="w-10 h-10 text-white bg-blue-600 p-2 rounded-md text-xl" />
+      <HandIcon className=" w-10 h-10 text-white bg-blue-600 p-2 rounded-md text-xl" />
     </div>
     <div className="ml-4">
       <p className="text-sm text-gray-600">Total Requests</p>
