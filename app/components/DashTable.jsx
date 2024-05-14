@@ -3,7 +3,7 @@
 const DashTable = () => {
     return (
      
-      <div className="p-5 h-screen lg:px-20  ">
+      <div className="p-5 h-screen lg:px-20 md:px-20 ">
         <div className="overflow-auto rounded-lg shadow ">
         <table className="w-full border-2 border-gray-300 bg-slate-200 rounded-lg text-black">
           <thead className="bg-gray-50 border-b-2 border-gray-200 text-left">
