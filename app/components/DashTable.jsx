@@ -2,67 +2,46 @@
 
 const DashTable = () => {
     return (
-      <div className="container mx-auto pt-10 ">
-        <div className="overflow-x-auto px-5 py-6 lg:px-20 ">
-          <div className="overflow-auto rounded-lg shadow max-[420px]:w-[180%] ">
-          <table className=" w-full border-2 border-gray-300 bg-gray-50 rounded-lg ">
-            <thead className="bg-slate-100 text-slate-500 text-xs">
-              <tr>
-                <th className="px-10 py-3 text-left ">NAME</th>
-                <th className="px-6 py-3 text-center">DATE TIME</th>
-                <th className="px-6 py-3 text-center">STATUS</th>
-                
-              </tr>
-            </thead>
-            <tbody>
-              <TableRow   name="Jane Copper" subject="Physics" date="9th March 2024" status="Completed" role="Owner"  />
-              <TableRow   name="Cody Fisher" subject="Physics" date="9th March 2024"  status="Pending" role="Owner" />
-              <TableRow  name="Ether Howard" subject="Physics" date="9th March 2024" status="Failed" role="Member"  />
-             
-            </tbody>
-          </table>
-          </div>
-        </div>
+     
+      <div className="p-5 h-screen lg:px-20  ">
+        <div className="overflow-auto rounded-lg shadow ">
+        <table className="w-full border-2 border-gray-300 bg-slate-200 rounded-lg text-black">
+          <thead className="bg-gray-50 border-b-2 border-gray-200 text-left">
+            <tr>
+              <th className="w-30 p-3 text-sm font-medium uppercase">Name </th>
+              <th className=" p-3 text-sm font-medium uppercase">Date Time </th>
+              <th className="w-20 p-3 text-sm font-medium uppercase">status</th>
+              <th className="w-36 p-3 text-sm font-medium uppercase"></th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-300">
+            <tr>
+              <td className="p-3 text-sm text-gray-700 whitespace-nowrap">Jane Copper <br /> <span>Maths</span> </td>
+              <td className="p-3 text-sm text-gray-700 whitespace-nowrap">7th may 2024 </td>
+              <td className="p-3 text-sm text-gray-700 whitespace-nowrap">
+                <span className="px-3 py-1 text-md font-medium tracking-wide text-green-700 bg-green-400 rounded-xl bg-opacity-40">Completed</span> </td>
+              <td className="p-3 text-sm text-blue-500 cursor-pointer whitespace-nowrap">View Details </td>
+            </tr>
+            <tr >
+              <td className="p-3 text-sm text-gray-700 whitespace-nowrap">Cody Fisher <br /> <span>Physics</span> </td>
+              <td className="p-3 text-sm text-gray-700 whitespace-nowrap">7th may 2024 </td>
+              <td className="p-3 text-sm text-gray-700 whitespace-nowrap">  <span className="px-3 py-1 text-md font-medium tracking-wide text-yellow-700 bg-yellow-400 rounded-xl bg-opacity-40"> Pending</span>  </td>
+              <td className="p-3 text-sm text-blue-500 cursor-pointer whitespace-nowrap">View Details </td>
+            </tr>
+            <tr>
+              <td className="p-3 text-sm text-gray-700 whitespace-nowrap">Esther Howard <br /> <span>Physics</span> </td>
+              <td className="p-3 text-sm text-gray-700 whitespace-nowrap">7th may 2024 </td>
+              <td className="p-3 text-sm text-gray-700 whitespace-nowrap">  <span className="px-3 py-1 text-md font-medium tracking-wide text-red-700 bg-red-400 rounded-xl bg-opacity-40"> Shipped</span>  </td>
+              <td className="p-3 text-sm  whitespace-nowrap text-blue-500 cursor-pointer">View Details </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       </div>
     );
   }
   
-  const TableRow = ({ name, subject, date, status, job }) => {
-      let statusColorClass = "";
-      switch (status) {
-        case "Completed":
-          statusColorClass = "bg-green-200";
-          break;
-        case "Failed":
-          statusColorClass = "bg-red-200";
-          break;
-        case "Pending":
-          statusColorClass = "bg-yellow-200";
-          break;
-        default:
-          statusColorClass = "bg-gray-200";
-      }
-    
-      return (
-        <tr className={`border-b border-gray-400 `}>
-          <td className="px-6 py-4">
-            <div className="flex items-center">
-              <div className="ml-4 text-left">
-                <div className="text-sm font-medium text-gray-900 flex-row  ">{name}</div>
-                <div className="text-sm text-gray-500">{subject}</div>
-              </div>
-            </div>
-          </td>
-          <td className="px-6 py-4 text-center">
-            <div className="text-sm text-gray-900 font-semibold">{date}<br/>{job}</div>
-          </td>
-          <td className="px-6 py-4 text-center">
-            <span className={`px-5 py-1 text-sm rounded-full font-semibold ${statusColorClass}`}>{status}  </span> <span className="px-6  py-4 text-blue-400 cursor-pointer">View details</span>
-          </td>
-        
-        </tr>
-      );
-    };
+  
     
   
   export default DashTable;

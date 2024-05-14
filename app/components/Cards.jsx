@@ -1,7 +1,7 @@
 import { HandIcon, MailIcon, UsersIcon } from '@heroicons/react/outline';
 const Cards = () => {
   return (
-    <div className=" max-[420px]:pt-5 flex flex-col md:flex-row gap-10 px-20 text-black max-[420px]:justify-center items-center">
+    <div className=" max-[420px]:pt-5 flex flex-col md:flex-row gap-10 px-20 text-black max-[420px]:justify-center items-center md:px-20 ">
       {/* Card 1 */}
       <div className="max-[420px]:w-[170%]   bg-white h-40 rounded-lg shadow-md p-3 flex flex-col  justify-start md:w-1/3 bottom-0 left-0 relative border-2 max-[390px]:h-48">
   <div className="flex items-center pt-2 px-2">
