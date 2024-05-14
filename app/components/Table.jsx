@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import T4 from '../../public/four4.jpg';
 import T1 from '../../public/one1.jpg';
 import T6 from '../../public/six6.jpg';

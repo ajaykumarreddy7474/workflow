@@ -1,5 +1,5 @@
 import { HomeIcon, UsersIcon } from '@heroicons/react/outline';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 import T1 from '../../public/logo.png';
 const SideNavbar = () => {

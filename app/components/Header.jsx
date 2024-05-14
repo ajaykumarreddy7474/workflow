@@ -1,5 +1,5 @@
 import { BellIcon, SearchIcon } from '@heroicons/react/outline';
-import Image from "next/image";
+import Image from "next/legacy/image";
 import T7 from '../../public/four4.jpg';
 const Header = () => {
   return (
