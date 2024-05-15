@@ -4,7 +4,7 @@ import T7 from '../../public/four4.jpg';
 const Header = () => {
   return (
     <div className="  absolute h-[8%] w-full flex justify-center ">
-        <div className="  max-[400px]:w-[100%] w-full flex justify-between items-left px-6 py-4 bg-slate-200 border-b-slate-300 border-2">
+        <div className="  max-[400px]:w-[100%] w-full flex justify-between items-left px-6 py-4 bg-slate-200 border-b-slate-300 border-2 relative z-10">
         <div className="flex items-center gap-2 md:w-auto ">
           <SearchIcon className="w-6 h-6 text-gray-500" />
           <input type="text" placeholder="Search" className="relative font-semibold border-none px-2 bg-slate-200 max-[420px]:w-20" />

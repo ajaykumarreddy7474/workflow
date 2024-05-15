@@ -1,4 +1,4 @@
-// import Cards from '../components/Cards'
+
 import DashTable from '../components/DashTable'
 import Location2 from '../components/location2'
 import Onecard from '../components/Onecard'
