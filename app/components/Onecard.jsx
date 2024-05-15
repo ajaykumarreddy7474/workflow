@@ -12,7 +12,7 @@ const Onecard = () => {
       </div>
       <div className="ml-4 ">
         <p className="text-sm text-gray-600">Total Requests</p>
-        <p className="text-2xl font-bold text-black">77,322 &nbsp;<span className="text-sm text-green-600"> &#9650; 122</span></p>
+        <p className="text-2xl font-bold text-black">77,322<span className="text-sm text-green-600"> &#9650; 122</span></p>
       </div>
     </div>
   </div>
