@@ -2,7 +2,7 @@ import { UsersIcon } from '@heroicons/react/outline';
 import React from 'react';
 const Onecard = () => {
   return (
-    <div class="flex flex-col justify-center items-center md:flex-row md:justify-center px-[55px] max-[420px]:px-[20px] " >
+    <div class="flex flex-col justify-center items-center md:flex-row md:justify-center px-[55px] max-[420px]:px-[30px] " >
   
   <div class="max-w-sm lg:w-[30%] md:max-w-full rounded overflow-hidden shadow-lg m-4  pb-[60px] bg-gray-100 relative">
   <div class="px-6 py-4  ">
